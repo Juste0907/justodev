@@ -1,0 +1,23 @@
+---
+title: "Next.js 14 : Les nouveautés"
+description: "Découverte des Server Actions et du nouvel App Router."
+date: "2024-02-10"
+tags: ["Next.js", "Dev"]
+---
+
+# Next.js 14 est là !
+
+Le framework React continue d'evoluer avec des fonctionnalités impressionnantes.
+
+## Server Actions
+
+Plus besoin d'API routes pour les mutations de données simples.
+
+```tsx
+async function create(formData: FormData) {
+  'use server'
+  // ...
+}
+```
+
+C'est une revolution pour la DX (Developer Experience).
