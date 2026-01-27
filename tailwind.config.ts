@@ -18,6 +18,7 @@ const config: Config = {
             colors: {
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
+                border: "hsl(var(--border))",
                 brand: {
                     500: "#c2784e", // Bronze/Copper
                     600: "#a66e45",
@@ -51,7 +52,6 @@ const config: Config = {
                     DEFAULT: "hsl(var(--destructive))",
                     foreground: "hsl(var(--destructive-foreground))",
                 },
-                border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
             },
