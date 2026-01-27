@@ -31,7 +31,7 @@ export function Header() {
                             </span>
                         </Link>
                         <span className="text-sm font-medium text-white tracking-tight">
-                            Dominic
+                            Juste Oussa
                         </span>
                         <div className="h-4 w-[1px] bg-white/20 mx-1 hidden sm:block"></div>
                     </div>

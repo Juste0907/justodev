@@ -46,7 +46,7 @@ export default function ContactPage() {
                         <div className="space-y-8 text-neutral-300">
                             <div>
                                 <h3 className="text-white font-medium mb-1">Email</h3>
-                                <a href="mailto:hello@dominic.com" className="hover:text-brand-500 transition-colors">hello@dominic.com</a>
+                                <a href="mailto:hello@justeoussa.com" className="hover:text-brand-500 transition-colors">hello@justeoussa.com</a>
                             </div>
                             <div>
                                 <h3 className="text-white font-medium mb-1">Socials</h3>

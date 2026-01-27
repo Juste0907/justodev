@@ -30,7 +30,7 @@ export function Footer() {
             </div>
 
             <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-neutral-500 text-sm">
-                <p>© {new Date().getFullYear()} Dominic Portfolio. All rights reserved.</p>
+                <p>© {new Date().getFullYear()} Juste Oussa Portfolio. All rights reserved.</p>
                 <div className="flex gap-6 mt-4 md:mt-0">
                     <Link href="#" className="hover:text-white transition-colors">
                         Twitter

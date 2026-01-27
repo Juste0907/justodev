@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 // const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" }); // Optional if we want dual fonts
 
 export const metadata: Metadata = {
-  title: "Dominic | Brand & UI/UX Designer",
-  description: "Portfolio of Dominic, a Brand & UI/UX Designer based in London.",
+  title: "Juste Oussa | UI/UX Designer & Consultant Digital",
+  description: "Portfolio de Juste Oussa, UI/UX Designer orienté conversion & performance digitale.",
 };
 
 export default function RootLayout({
