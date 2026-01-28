@@ -49,7 +49,7 @@ export const projects: Project[] = [
         title: "Sophia Laurent Photography",
         description: "Galerie digitale interactive pour une photographe de mode. Expérience utilisateur centrée sur l'image et le storytelling visuel.",
         category: "Art Direction",
-        image: "/images/projects/project4.jpg",
+        image: "/images/projects/project4.png",
         year: "2023",
         link: "https://sophialaurent.netlify.app",
         tags: ["Portfolio", "Interaction", "Gallery"],

@@ -129,8 +129,16 @@ export default function Home() {
             {featuredProjects.map((project, idx) => (
               <Link href={project.link} key={project.id} target="_blank" className="group block">
                 <div className="relative aspect-[4/3] bg-neutral-800 rounded-2xl overflow-hidden mb-4 border border-white/5 group-hover:border-brand-500/50 transition-colors">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={90}
+                    className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                  />
                   <div className="absolute inset-0 bg-brand-900/20 group-hover:bg-transparent transition-colors"></div>
-                  <div className="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="absolute bottom-6 left-4 right-4 translate-y-0 opacity-100 md:translate-y-4 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-300">
                     <Button size="sm" variant="default" className="w-full">Visiter le site</Button>
                   </div>
                 </div>

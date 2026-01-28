@@ -45,8 +45,11 @@ export default function ContactPage() {
 
                         <div className="space-y-8 text-neutral-300">
                             <div>
-                                <h3 className="text-white font-medium mb-1">Email</h3>
-                                <a href="mailto:hello@justeoussa.com" className="hover:text-brand-500 transition-colors">hello@justeoussa.com</a>
+                                <h3 className="text-white font-medium mb-1">Email & Téléphone</h3>
+                                <div className="flex flex-col gap-1">
+                                    <a href="mailto:oussaisbert090721@gmail.com" className="hover:text-brand-500 transition-colors">oussaisbert090721@gmail.com</a>
+                                    <a href="tel:+2290161693298" className="hover:text-brand-500 transition-colors">+229 01 61 69 32 98</a>
+                                </div>
                             </div>
                             <div>
                                 <h3 className="text-white font-medium mb-1">Socials</h3>

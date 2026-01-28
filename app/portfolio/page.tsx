@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
@@ -66,15 +67,18 @@ export default function PortfolioPage() {
                             >
                                 <Link href={project.link} target="_blank" className="group block h-full">
                                     <div className="relative aspect-[4/3] bg-neutral-900 rounded-2xl overflow-hidden mb-4 border border-white/5 group-hover:border-brand-500/50 transition-colors">
-                                        {/* Placeholder for project image if not available, generating a nice gradient with title */}
-                                        <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-black p-6 flex items-center justify-center text-center">
-                                            <span className="text-2xl font-semibold text-neutral-700 group-hover:text-brand-500/50 transition-colors">
-                                                {project.title.substring(0, 2)}
-                                            </span>
-                                        </div>
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            quality={90}
+                                            className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                                        />
+                                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
 
-                                        <div className="absolute bottom-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                            <div className="bg-white text-black p-2 rounded-full">
+                                        <div className="absolute bottom-4 right-4 translate-y-0 opacity-100 md:translate-y-full md:group-hover:translate-y-0 transition-all duration-300">
+                                            <div className="bg-white text-black p-2 rounded-full shadow-lg">
                                                 <ArrowUpRight className="w-5 h-5" />
                                             </div>
                                         </div>
